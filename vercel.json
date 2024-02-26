@@ -2,14 +2,14 @@
     "version": 2,
     "builds": [
       {
-        "src": "nodemon server.js",
-        "use": "@now/node"
+        "src": "node server.js",
+        "use": "@vercel/node"
       }
     ],
     "routes": [
       {
         "src": "/(.*)",
-        "dest": "nodemon server.js"
+        "dest": "/"
       }
     ]
   }
